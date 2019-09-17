@@ -1,5 +1,5 @@
 //
-//  Badge.swift
+//  BadgeBackground.swift
 //  Places
 //
 //  Created by Evgeniy Boytsov on 17.09.2019.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct Badge: View {
+struct BadgeBackground: View {
     var body: some View {
 
         GeometryReader { geometry in
@@ -59,8 +59,8 @@ struct Badge: View {
     static let gradientEnd = Color(red: 239.0 / 255, green: 172.0 / 255, blue: 120.0 / 255)
 }
 
-struct Badge_Previews: PreviewProvider {
+struct BadgeBackground_Previews: PreviewProvider {
     static var previews: some View {
-        Badge()
+        BadgeBackground()
     }
 }
