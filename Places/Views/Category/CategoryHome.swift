@@ -18,12 +18,16 @@ struct CategoryHome: View {
 
     var body: some View {
         NavigationView {
-            List(self.categories.keys.sorted(), id: \.self) { categoryName in
-                NavigationLink(destination: Text(categoryName)) {
-                    CategoryRow(categoryName: categoryName, landmarks: self.categories[categoryName]!)
+            List {
+                ForEach(self.categories.keys.sorted(), id: \.self) { categoryName in
+                    CategoryRow(
+                        categoryName: categoryName,
+                        landmarks: self.categories[categoryName]!
+                    )
+                        .padding(.vertical, 15)
                 }
             }
-                .navigationBarTitle(Text("Featured"))
+            .navigationBarTitle(Text("Categories"))
         }
     }
 }

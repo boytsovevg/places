@@ -13,8 +13,22 @@ struct CategoryRow: View {
     var landmarks: [Landmark]
 
     var body: some View {
-        Text(self.categoryName)
-            .font(.headline)
+        VStack(alignment: .leading) {
+            Text(self.categoryName)
+                .font(.headline)
+                .padding(.top, 5)
+
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
+                    ForEach(self.landmarks) { l in
+                        NavigationLink(destination: LandmarkDetail(landmark: l)) {
+                            LandmarkPreview(preview: l)
+                        }
+                    }
+                }
+            }
+        }
+        .frame(height: 185)
     }
 }
 
