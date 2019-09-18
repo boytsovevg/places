@@ -49,14 +49,14 @@ struct BadgeBackground: View {
             .fill(LinearGradient(
                 gradient: .init(colors: [Self.gradientStart, Self.gradientEnd]),
                 startPoint: .init(x: 0.5, y: 0),
-                endPoint: .init(x: 0.5, y: 0.6)
+                endPoint: .init(x: 0.5, y: 0.8)
             ))
-                .aspectRatio(contentMode: .fit)
+                .aspectRatio(1, contentMode: .fit)
         }
     }
 
-    static let gradientStart = Color(red: 239.0 / 255, green: 120.0 / 255, blue: 221.0 / 255)
-    static let gradientEnd = Color(red: 239.0 / 255, green: 172.0 / 255, blue: 120.0 / 255)
+    static let gradientStart = Color(red: 54.0 / 255, green: 209.0 / 255, blue: 220.0 / 255)
+    static let gradientEnd = Color(red: 91.0 / 255, green: 134.0 / 255, blue: 229.0 / 255)
 }
 
 struct BadgeBackground_Previews: PreviewProvider {
