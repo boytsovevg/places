@@ -45,6 +45,7 @@ struct CategoryHome: View {
             .navigationBarItems(trailing: profileButton)
             .sheet(isPresented: $showProfile) {
                 ProfileHost()
+                    .padding()
             }
         }
     }
