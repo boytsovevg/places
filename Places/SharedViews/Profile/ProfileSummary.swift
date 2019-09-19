@@ -11,12 +11,12 @@ import SwiftUI
 struct ProfileSummary: View {
     var profile: Profile
 
-    static let goalFormatter: DateFormatter = {
+    static var goalFormatter: DateFormatter {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMMM d, yyyy"
 
         return formatter
-    }()
+    }
 
     var body: some View {
         List{
@@ -48,6 +48,13 @@ struct ProfileSummary: View {
                             .hueRotation(Angle(degrees: 55))
                     }
                 }
+            }
+
+            VStack(alignment: .leading) {
+                Text("Recent Hikes")
+                    .font(.headline)
+
+                HikeView(hike: hikeData[0])
             }
         }
     }

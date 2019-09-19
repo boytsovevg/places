@@ -24,6 +24,8 @@
 		F09A6B5523335BE70048537D /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09A6B5423335BE70048537D /* Hike.swift */; };
 		F09A6B5723335C360048537D /* GraphCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09A6B5623335C360048537D /* GraphCapsule.swift */; };
 		F09A6B5A23335C7A0048537D /* HikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09A6B5923335C7A0048537D /* HikeGraph.swift */; };
+		F09A6B5D23335CFE0048537D /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09A6B5C23335CFE0048537D /* HikeView.swift */; };
+		F09A6B5F23335D170048537D /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09A6B5E23335D170048537D /* HikeDetail.swift */; };
 		F0AACA9E23311D1800443127 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = F0AACA9D23311D1800443127 /* landmarkData.json */; };
 		F0AACAAB23311D6900443127 /* silversalmoncreek.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F0AACA9F23311D6800443127 /* silversalmoncreek.jpg */; };
 		F0AACAAC23311D6900443127 /* chilkoottrail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F0AACAA023311D6900443127 /* chilkoottrail.jpg */; };
@@ -69,6 +71,8 @@
 		F09A6B5423335BE70048537D /* Hike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
 		F09A6B5623335C360048537D /* GraphCapsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphCapsule.swift; sourceTree = "<group>"; };
 		F09A6B5923335C7A0048537D /* HikeGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeGraph.swift; sourceTree = "<group>"; };
+		F09A6B5C23335CFE0048537D /* HikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
+		F09A6B5E23335D170048537D /* HikeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeDetail.swift; sourceTree = "<group>"; };
 		F0AACA9D23311D1800443127 /* landmarkData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		F0AACA9F23311D6800443127 /* silversalmoncreek.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = silversalmoncreek.jpg; sourceTree = "<group>"; };
 		F0AACAA023311D6900443127 /* chilkoottrail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chilkoottrail.jpg; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 		F022B1BE23311AA600FCC4B8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F09A6B5B23335CEC0048537D /* Hike */,
 				F0833E4123326BE3006D2B74 /* Category */,
 				F0833E4023326BC6006D2B74 /* Landmark */,
 			);
@@ -219,6 +224,15 @@
 				F09A6B5923335C7A0048537D /* HikeGraph.swift */,
 			);
 			path = Graph;
+			sourceTree = "<group>";
+		};
+		F09A6B5B23335CEC0048537D /* Hike */ = {
+			isa = PBXGroup;
+			children = (
+				F09A6B5C23335CFE0048537D /* HikeView.swift */,
+				F09A6B5E23335D170048537D /* HikeDetail.swift */,
+			);
+			path = Hike;
 			sourceTree = "<group>";
 		};
 		F0AACAB723311D9A00443127 /* SharedViews */ = {
@@ -379,9 +393,11 @@
 				F0AACABF2331235000443127 /* Hexagon.swift in Sources */,
 				F0AACABD233122D700443127 /* BadgeBackground.swift in Sources */,
 				F05557092332796F00C101EC /* LandmarkPreview.swift in Sources */,
+				F09A6B5D23335CFE0048537D /* HikeView.swift in Sources */,
 				F0833E3F2332695B006D2B74 /* CategoryHome.swift in Sources */,
 				F022B1E923311C9900FCC4B8 /* UserData.swift in Sources */,
 				F0D3E9F42331178D00C28B8D /* AppDelegate.swift in Sources */,
+				F09A6B5F23335D170048537D /* HikeDetail.swift in Sources */,
 				F0D3E9F62331178D00C28B8D /* SceneDelegate.swift in Sources */,
 				F0833E4323326BF7006D2B74 /* CategoryRow.swift in Sources */,
 				F05568DB2333540000C09C75 /* HikeBadge.swift in Sources */,
