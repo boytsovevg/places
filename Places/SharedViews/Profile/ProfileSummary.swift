@@ -19,38 +19,36 @@ struct ProfileSummary: View {
     }
 
     var body: some View {
-        VStack {
-            List {
-                Text(profile.username)
-                    .bold()
-                    .font(.title)
+        List {
+            Text(profile.username)
+                .bold()
+                .font(.title)
 
-                Text("Notifications is: \(self.profile.prefersNotifications ? "On" : "Off")")
-                Text("Seasonal Photos: \(self.profile.seasonalPhoto.rawValue)")
-                Text("Goal Date: \(self.profile.goalDate, formatter: Self.goalFormatter)")
+            Text("Notifications is: \(self.profile.prefersNotifications ? "On" : "Off")")
+            Text("Seasonal Photos: \(self.profile.seasonalPhoto.rawValue)")
+            Text("Goal Date: \(self.profile.goalDate, formatter: Self.goalFormatter)")
 
-                VStack(alignment: .leading) {
-                    Text("Completed badges")
-                        .font(.headline)
+            VStack(alignment: .leading) {
+                Text("Completed badges")
+                    .font(.headline)
 
-                    ScrollView {
-                        HStack {
-                            HikeBadge(name: "First Breath")
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack {
+                        HikeBadge(name: "First Breath")
 
-                            HikeBadge(name: "Walker")
-                                .hueRotation(Angle(degrees: 150))
+                        HikeBadge(name: "Walker")
+                            .hueRotation(Angle(degrees: 150))
 
-                            HikeBadge(name: "Mountain Killer")
-                                .grayscale(0.7)
-                                .hueRotation(Angle(degrees: 100))
+                        HikeBadge(name: "Mountain Killer")
+                            .grayscale(0.7)
+                            .hueRotation(Angle(degrees: 100))
 
-                            HikeBadge(name: "Inspirer")
-                                .grayscale(0.2)
-                                .hueRotation(Angle(degrees: 55))
-                        }
+                        HikeBadge(name: "Inspirer")
+                            .grayscale(0.2)
+                            .hueRotation(Angle(degrees: 55))
                     }
-                    .frame(height: 140)
                 }
+                .frame(height: 140)
             }
 
             VStack(alignment: .leading) {
@@ -59,9 +57,6 @@ struct ProfileSummary: View {
 
                 HikeView(hike: hikeData[0])
             }
-            .padding(.horizontal, 20)
-
-            Spacer()
         }
     }
 }

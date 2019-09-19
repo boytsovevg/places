@@ -26,6 +26,7 @@
 		F09A6B5A23335C7A0048537D /* HikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09A6B5923335C7A0048537D /* HikeGraph.swift */; };
 		F09A6B5D23335CFE0048537D /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09A6B5C23335CFE0048537D /* HikeView.swift */; };
 		F09A6B5F23335D170048537D /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09A6B5E23335D170048537D /* HikeDetail.swift */; };
+		F09A6B612333E70C0048537D /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09A6B602333E70C0048537D /* ProfileEditor.swift */; };
 		F0AACA9E23311D1800443127 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = F0AACA9D23311D1800443127 /* landmarkData.json */; };
 		F0AACAAB23311D6900443127 /* silversalmoncreek.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F0AACA9F23311D6800443127 /* silversalmoncreek.jpg */; };
 		F0AACAAC23311D6900443127 /* chilkoottrail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F0AACAA023311D6900443127 /* chilkoottrail.jpg */; };
@@ -73,6 +74,7 @@
 		F09A6B5923335C7A0048537D /* HikeGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeGraph.swift; sourceTree = "<group>"; };
 		F09A6B5C23335CFE0048537D /* HikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
 		F09A6B5E23335D170048537D /* HikeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeDetail.swift; sourceTree = "<group>"; };
+		F09A6B602333E70C0048537D /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 		F0AACA9D23311D1800443127 /* landmarkData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		F0AACA9F23311D6800443127 /* silversalmoncreek.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = silversalmoncreek.jpg; sourceTree = "<group>"; };
 		F0AACAA023311D6900443127 /* chilkoottrail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chilkoottrail.jpg; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			children = (
 				F05568D223334CFC00C09C75 /* ProfileHost.swift */,
 				F05568D8233351F500C09C75 /* ProfileSummary.swift */,
+				F09A6B602333E70C0048537D /* ProfileEditor.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				F09A6B5A23335C7A0048537D /* HikeGraph.swift in Sources */,
 				F022B1C023311AC000FCC4B8 /* LandmarkRow.swift in Sources */,
 				F0AACAC62332001300443127 /* RotatedBadgeSymbol.swift in Sources */,
+				F09A6B612333E70C0048537D /* ProfileEditor.swift in Sources */,
 				F022B1C423311B0B00FCC4B8 /* LandmarkList.swift in Sources */,
 				F0AACAB923311DA800443127 /* MapView.swift in Sources */,
 				F022B1E423311C1400FCC4B8 /* Landmark.swift in Sources */,

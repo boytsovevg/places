@@ -6,7 +6,7 @@
 //  Copyright © 2019 boytsovevg. All rights reserved.
 //
 
-import Foundation
+import SwiftUI
 
 struct Profile {
     var username: String

@@ -9,10 +9,25 @@
 import SwiftUI
 
 struct ProfileHost: View {
+    @Environment(\.editMode) var mode;
     @State var profile = Profile.default
+    @State var draftProfile = Profile.default
 
     var body: some View {
-        ProfileSummary(profile: self.profile)
+        VStack(alignment: .leading, spacing: 20) {
+            HStack {
+                Spacer()
+                EditButton()
+            }
+
+            if self.mode?.wrappedValue == .inactive {
+                ProfileSummary(profile: self.profile)
+            } else {
+                ProfileEditor(profile: self.$draftProfile)
+            }
+
+        }
+        .padding(.horizontal)
     }
 }
 
