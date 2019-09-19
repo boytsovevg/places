@@ -9,11 +9,21 @@
 import SwiftUI
 
 struct CategoryHome: View {
+    @State var showProfile = false;
+
     var categories: [String: [Landmark]] {
         Dictionary(
             grouping: landmarkData,
             by: { $0.category.rawValue }
         )
+    }
+
+    var profileButton: some View {
+        Button(action: { self.showProfile.toggle() }) {
+            Image(systemName: "person.crop.circle")
+                .imageScale(.large)
+                .accessibility(label: Text("User Profile Button"))
+        }
     }
 
     var body: some View {
@@ -24,10 +34,18 @@ struct CategoryHome: View {
                         categoryName: categoryName,
                         landmarks: self.categories[categoryName]!
                     )
-                        .padding(.vertical, 15)
+                    .padding(.vertical, 15)
+                }
+
+                NavigationLink(destination: LandmarksList()) {
+                    Text("See all")
                 }
             }
             .navigationBarTitle(Text("Categories"))
+            .navigationBarItems(trailing: profileButton)
+            .sheet(isPresented: $showProfile) {
+                ProfileHost()
+            }
         }
     }
 }
