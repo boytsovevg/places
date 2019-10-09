@@ -9,7 +9,6 @@
 import SwiftUI
 
 struct CategoryHome: View {
-    @State var showProfile = false;
 
     var categories: [String: [Landmark]] {
         Dictionary(
@@ -17,6 +16,9 @@ struct CategoryHome: View {
             by: { $0.category.rawValue }
         )
     }
+
+    @State var showProfile = false;
+    @EnvironmentObject var userData: UserData
 
     var profileButton: some View {
         Button(action: { self.showProfile.toggle() }) {
@@ -45,6 +47,7 @@ struct CategoryHome: View {
             .navigationBarItems(trailing: profileButton)
             .sheet(isPresented: $showProfile) {
                 ProfileHost()
+                    .environmentObject(self.userData)
                     .padding()
             }
         }
